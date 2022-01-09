@@ -28,3 +28,23 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+
+def save_csv(user_path,qualifying_loans):
+    """Saves data as .csv file to a user defined file path
+
+    Args:
+        user_path (string): user defined file path where the .csv file is saved
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+
+    with open(user_path, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+
+        #define header based on primary bank data file and then write header row to csv first
+        header = ["Lender", "Max Loan Amount" ,"Max LTV" ,"Max DTI", "Min Credit Score", "Interest Rate"]
+        csvwriter.writerow(header)
+
+        # Then we can write the data rows
+        for row in qualifying_loans:
+            csvwriter.writerow(row.values())
