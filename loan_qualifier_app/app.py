@@ -83,7 +83,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     """
 
-    # Calculate the monthly debt ratio
+    # Calculate the monthly debt ratio 
     monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income)
     print(f"The monthly debt to income ratio is {monthly_debt_ratio:.02f}")
 
@@ -101,6 +101,24 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     return bank_data_filtered
 
+def save_csv(user_path,qualifying_loans):
+    """Saves data as .csv file to a user defined file path
+
+    Args:
+        user_path (string): user defined file path where the .csv file is saved
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+
+    with open(user_path, 'w', newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+
+        #define header based on primary bank data file and then write header row to csv first
+        header = ["Lender", "Max Loan Amount" ,"Max LTV" ,"Max DTI", "Min Credit Score", "Interest Rate"]
+        csvwriter.writerow(header)
+
+        # Then we can write the data rows
+        for row in qualifying_loans:
+            csvwriter.writerow(row.values())
 
 def save_qualifying_loans(qualifying_loans):
     """Saves the qualifying loans to a CSV file.
