@@ -45,8 +45,6 @@ def save_csv(user_path, qualifying_loans):
         header = ["Lender", "Max Loan Amount" ,"Max LTV" ,"Max DTI", "Min Credit Score", "Interest Rate"]
         csvwriter.writerow(header)
 
-        print(qualifying_loans)
-
         # Then we can write the data rows
         for loan in qualifying_loans:
             csvwriter.writerow(loan)
