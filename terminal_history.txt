@@ -1,0 +1,288 @@
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge
+$ cd module_2_challenge/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        loan_qualifier_app/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add loan_qualifier_app/
+warning: CRLF will be replaced by LF in loan_qualifier_app/README.md.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/app.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/filters/credit_score.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/filters/debt_to_income.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/filters/loan_to_value.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/filters/max_loan_size.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/utils/calculators.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/utils/fileio.py.
+The file will have its original line endings in your working directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   loan_qualifier_app/README.md
+        new file:   loan_qualifier_app/app.py
+        new file:   loan_qualifier_app/data/daily_rate_sheet.csv
+        new file:   loan_qualifier_app/qualifier/filters/credit_score.py
+        new file:   loan_qualifier_app/qualifier/filters/debt_to_income.py
+        new file:   loan_qualifier_app/qualifier/filters/loan_to_value.py
+        new file:   loan_qualifier_app/qualifier/filters/max_loan_size.py
+        new file:   loan_qualifier_app/qualifier/utils/calculators.py
+        new file:   loan_qualifier_app/qualifier/utils/fileio.py
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git commit -m "Uploading stater code for beginning reference point"
+[main 811f971] Uploading stater code for beginning reference point
+ 9 files changed, 358 insertions(+)
+ create mode 100644 loan_qualifier_app/README.md
+ create mode 100644 loan_qualifier_app/app.py
+ create mode 100644 loan_qualifier_app/data/daily_rate_sheet.csv
+ create mode 100644 loan_qualifier_app/qualifier/filters/credit_score.py
+ create mode 100644 loan_qualifier_app/qualifier/filters/debt_to_income.py
+ create mode 100644 loan_qualifier_app/qualifier/filters/loan_to_value.py
+ create mode 100644 loan_qualifier_app/qualifier/filters/max_loan_size.py
+ create mode 100644 loan_qualifier_app/qualifier/utils/calculators.py
+ create mode 100644 loan_qualifier_app/qualifier/utils/fileio.py
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git push
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 5.07 KiB | 1.69 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/plefebvre1/module_2_challenge.git
+   3999849..811f971  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git touch terminal_history.txt
+git: 'touch' is not a git command. See 'git --help'.
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ touch terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   loan_qualifier_app/app.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        terminal_history.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   terminal_history.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   loan_qualifier_app/app.py
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add loan_qualifier_app/app.py
+warning: CRLF will be replaced by LF in loan_qualifier_app/app.py.
+The file will have its original line endings in your working directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ status
+bash: status: command not found
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   loan_qualifier_app/app.py
+        new file:   terminal_history.txt
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git commit -m "placeholder terminal_history.txt file added; app.py updated to include a save_csv function which can be called to save data to a .csv file"
+[main 617b878] placeholder terminal_history.txt file added; app.py updated to include a save_csv function which can be called to save data to a .csv file
+ 2 files changed, 19 insertions(+), 1 deletion(-)
+ create mode 100644 terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 981 bytes | 981.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_2_challenge.git
+   811f971..617b878  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   loan_qualifier_app/app.py
+        modified:   loan_qualifier_app/qualifier/utils/fileio.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add loan_qualifier_app/app.py
+warning: CRLF will be replaced by LF in loan_qualifier_app/app.py.
+The file will have its original line endings in your working directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add loan_qualifier_app/qualifier/utils/fileio.py
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/utils/fileio.py.
+The file will have its original line endings in your working directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   loan_qualifier_app/app.py
+        modified:   loan_qualifier_app/qualifier/utils/fileio.py
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git commit -m "Moved save_csv function from app.py to filio.py in qualifier/utils/ folder"
+[main b8723c4] Moved save_csv function from app.py to filio.py in qualifier/utils/ folder
+ 2 files changed, 25 insertions(+), 20 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.02 KiB | 1.02 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/plefebvre1/module_2_challenge.git
+   617b878..b8723c4  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ python app.py
+C:\Users\peter\anaconda3\envs\dev\envs\dev\python.exe: can't open file 'app.py': [Errno 2] No such file or directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   loan_qualifier_app/app.py
+        modified:   loan_qualifier_app/qualifier/utils/fileio.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        loan_qualifier_app/newtest.csv
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add loan_qualifier_app/app.py
+warning: CRLF will be replaced by LF in loan_qualifier_app/app.py.
+The file will have its original line endings in your working directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git add loan_qualifier_app/qualifier/utils/fileio.py
+warning: CRLF will be replaced by LF in loan_qualifier_app/qualifier/utils/fileio.py.
+The file will have its original line endings in your working directory
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   loan_qualifier_app/app.py
+        modified:   loan_qualifier_app/qualifier/utils/fileio.py
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git commit -m "Created and tested new save_qualifying_loans function in main app.py file that calls save_csv function if requested"
+[main 4847b2b] Created and tested new save_qualifying_loans function in main app.py file that calls save_csv function if requested
+ 2 files changed, 14 insertions(+), 5 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 953 bytes | 953.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/plefebvre1/module_2_challenge.git
+   b8723c4..4847b2b  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/Module_2_Challenge/module_2_challenge (main)
+$
